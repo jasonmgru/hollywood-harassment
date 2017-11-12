@@ -157,7 +157,7 @@ function lookUp(people){
         setTimeout(function(){ lookUp(people.slice(1)); }, 1000);
 
     }).fail(function(err){
-        alert('failure');
+        alert("ERROR retrieving data from New York Times (hint: don't press enter while search is running)");
     });
 }
 
@@ -195,6 +195,8 @@ function getPeople(movie){
 $(document).keypress(function(key){
     if(key.keyCode === 13){
 
+        $('.loader').hide();        
+
         reset();
         createLoader();
 
@@ -208,7 +210,6 @@ function reset(){
 
     $('#display').fadeOut(0);
     $('#display').empty();
-    $('.loader').hide();
 }
 
 function createLoader(){
