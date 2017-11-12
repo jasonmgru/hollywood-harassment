@@ -158,6 +158,8 @@ function lookUp(people){
 
     }).fail(function(err){
         alert("ERROR retrieving data from New York Times (hint: don't press enter while search is running)");
+        reset();
+        $('.loader').hide();
     });
 }
 
