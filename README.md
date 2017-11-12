@@ -1,4 +1,4 @@
-# Hollywood Harassment
+# Hollywood Harassment LINK: https://jasonmgru.github.io/hollywood-harassment/
 
 ## Collaborators
 * Jayden Alstad
