@@ -172,18 +172,17 @@ function getPeople(movie){
             var director = response.Director;
             var writer = response.Writer;
             var actors = response.Actors;
-            console.log(director);
-            console.log(writer);
-            console.log(actors);
+            console.log('director: '+director);
+            console.log('writer: '+writer);
+            console.log('actors: '+actors);
 
             var directorList = betterSplit(director);
             var writerList = betterSplit(writer);
             var actorList = betterSplit(actors);
 
             var people = directorList.concat(writerList.concat(actorList));
-            console.log(people);
             people = dedupe(purifyNames(removeNA(people)));
-            console.log(people);
+            console.log('all people: '+people);
 
             lookUp(people);
         }
@@ -209,6 +208,7 @@ function reset(){
 
     $('#display').fadeOut(0);
     $('#display').empty();
+    $('.loader').hide();
 }
 
 function createLoader(){
