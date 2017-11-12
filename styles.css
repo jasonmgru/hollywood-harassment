@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* WHOLE PAGE */
+
+html {
+  background-color: #2d2d2d;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://static.pexels.com/photos/75456/nostalgy-collector-michelle-heavy-metal-75456.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 5vw;
+  margin-bottom: 10vh;
+}
+
+h2 {
+  font-size: 2vw;
+  color: #c0c0c0;
+}
+
+input {
+  border-style: solid;
+  background-color: rgba(22, 22, 22, 0.6);
+  border-color: #c0c0c0;
+  color: white;
+  border-width: 2px;
+  width: 80vw; 
+  height: 6vh;
+  border-radius: 0.5vw;
+  font-size: 1.5vw;    
+  margin-top: 3vw;
+  text-align: center;
+}
+
+input:focus {
+  border-color: #4c94c9;
+}
+
+a {
+  color: white;
+}
+
+#red {
+  background-color: rgba(148, 0, 0, 0.6); 
+  padding: 5px; 
+  border-radius: 0.5vw; 
+  font-size: 4vh;
+  height: 6vh;
+  width: 79.7vw;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+#green {
+    background-color: rgba(23, 118, 35, 0.6);
+    padding: 5px; 
+    border-radius: 0.5vw; 
+    font-size: 4vh;
+    height: 6vh;
+    width: 79.7vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+
+label {
+  display: block;
+  margin: auto;
+  font-size: 3vh;
+  color: white;
+}
+
+div {
+  display: block;
+  margin-top: 2vh;
+}
+
+p {
+  font-size: 2.5vh;
+  text-decoration: underline;
+}
+
+p:hover {
+  cursor: pointer;
+  color: #c0c0c0;
+}
+
+
+/* LOADER */
+
+.loader {
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    border-radius: 50%;
+    border-top: 6px solid #4c94c9;
+    width: 4vw;
+    height: 4vw;
+    -webkit-animation: spin 0.8s linear infinite;
+    animation: spin 0.8s linear infinite;
+    display: block;
+    margin: auto;
+    margin-top: 4vh;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
